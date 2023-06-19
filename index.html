@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DR</title>
+</head>
+<body>
+        <div class="front">
+            <h1><span>УГАДАЙ ЧИСЛО ОТ 1 до 10  !!!</span></h1>
+            <div class="oblnum">
+                <div class="oblum_obl2">
+                    <h2 class="num2"><span onclick="num(2)">2</span></h2>
+                </div>
+                <div class="oblum_obl5">
+                    <h2 class="num5"><span onclick="num(5)">5</span></h2>
+                </div>
+                <div class="oblum_obl10">
+                    <h2 class="num10"><span onclick="num(10)">10</span></h2>
+                </div>
+                <div class="oblum_obl6">
+                    <h2 class="num6"><span onclick="num(6)">6</span></h2>
+                </div>
+                <div class="oblum_obl1">               
+                    <h2 class="num1"><span onclick="num(1)">1</span></h2>
+                </div>
+                <div class="oblum_obl3">
+                    <h2 class="num3"><span onclick="num(3)">3</span></h2>
+                </div>
+                <div class="oblum_obl9">
+                    <h2 class="num9"><span onclick="num(9)">9</span></h2>
+                </div>
+                <div class="oblum_obl7">
+                    <h2 class="num7"><span onclick="num(7)">7</span></h2>
+                </div>
+                <div class="oblum_obl4">
+                    <h2 class="num4"><span onclick="num(4)">4</span></h2>
+                </div>
+                <div class="oblum_obl8">
+                    <h2 class="num8"><span onclick="num(8)">8</span></h2>
+                </div>
+            </div>
+            <div class="men">
+                <img class="developer" src="img/Без имени-1.png" alt="">
+            </div>
+        </div>
+        <div class="pupop_false">
+            <div class="pupop__false_body">
+                <div class="form">
+                    <div class="form_header">
+                        <button class="X" onclick="clos()">X</button>
+                    </div>
+                    <div class="facefolse">
+                        <img src="ico/icons8-man-facepalming-48.png" alt="">
+                    </div>
+                    <div class="text_folse">
+                        <p class="text">НЕ УГАДАЛ!!! ПОПРОБУЙ ЕЩЁ!!!</p>
+                    </div>
+                    <div class="close_button">
+                        <button class="ok" onclick="clos()">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="pupop_end">
+        <div class="pupop__end_body">
+            <div class="form">
+                <div class="form_header">
+                    <button class="X" onclick="clos()">X</button>
+                </div>
+                <div class="facefolse">
+                    <img class="face_end" src="ico/pngwing.com.png" alt="">
+                </div>
+                <div class="text_folse">
+                    <p class="text">ИГРА ОКОНЧЕНА</p>
+                </div>
+                <div class="close_button">
+                    <button class="ok" onclick="clos()">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pupop_true">
+        <div class="pupop__true_body">
+            <div class="form">
+                <div class="facefolse">
+                    <img class="face_true" src="ico/win.png" alt="">
+                </div>
+                <div class="text_folse">
+                    <p class="text">ПОБЕДА! ПОБЕДА! ПОБЕДА!</p>
+                </div>
+                <div class="close_button_win">
+                    <button class="ok" onclick="win()">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pupop_postcard">
+        <div class="pupop__postcard_body">
+            <div class="content_postcard">
+                <div class="postcard_header">
+                    <button class="X" onclick="clos()">X</button>
+                </div>
+                <div class="stih">
+                    <p class="mom">Мама милая моя,<br> 
+                        я люблю тебя всегда!<br>
+                        Мама милая моя, <br>
+                        я хочу чтоб ты была! <br>
+                        Мама милая моя, <br>
+                        ты красива и умна!<br>
+                        Мама лучшая моя,<br>
+                        без тебя никак никак!<br>
+                        Я люблю тебя вот так!!! </p>
+                </div>
+                <div id="slyder" class="slyder">
+                    <div class="slyderLine">
+                        <img class="foto1" src="foto/IMG_20161123_170808.jpg" alt="">
+                        <img class="foto5" src="foto/IMG_20171021_153347.jpg" alt="">
+                        <img class="foto6" src="foto/IMG_20171021_162005_HDR.jpg" alt="">
+                        <img class="foto7" src="foto/WP_20141124_005.jpg" alt="">
+                        <img class="foto2" src="foto/image-0-02-05-3d6c24efd3e74e0429a98bf45b1275f4cbbc7f7849592309c0cd3084bee6178d-V.jpg" alt="">
+                        <img class="foto4" src="foto/IMG_20161119_234003_HDR.jpg" alt="">
+                        <img class="foto3" src="foto/IMG_20161119_233746.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="pesnya" src="midi/pesnya_pro_mamu_samaya_ludshaya_pesnya_-_ya_celuyu_tvoi_ruki_moya_rodnaya_ty_nezhnee_vsekh_na_svete_ya_tochno_znayu_61919755.mp3"></audio>
+    <audio id="gameover" src="midi/0961f580f9e00da.mp3"></audio>
+    <audio id="audiwin" src="midi/db344f8d1a8d5b5.mp3"></audio>
+    <audio id="audiofolse" src="midi/z_uk-proigrysha.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
